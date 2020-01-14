@@ -24,6 +24,8 @@ class App extends React.Component {
   }
 }
 
+export default App;
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -45,4 +47,4 @@ class App extends React.Component {
 //   );
 // }
 
-export default App;
+
