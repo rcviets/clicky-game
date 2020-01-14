@@ -4,7 +4,6 @@ import Jumbotron from './components/Jumbotron';
 import Score from './components/Score';
 import Officers from './tng.json';
 import './App.css';
-import { render } from '@testing-library/react';
 
 class App extends React.Component {
   state = {
