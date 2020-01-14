@@ -1,15 +1,15 @@
 import React from 'react';
-import Score from 'score';
+import Score from '';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div>
-            <nav className="navbar navbar-light bg-warning">
-                <a className="navbar-brand" href="#">Clicky Game</a>
-                <span class="navbar-text">
-                    <Score />
-                </span>
+            <nav class="navbar navbar-light bg-warning">
+                <a class="navbar-brand" href="#">Clicky Game</a>
             </nav>
+            <span class="navbar-text">
+                <p>Score: {props.score} || Top Score: {props.topScore}</p>
+            </span>
         </div>
     );
 }
