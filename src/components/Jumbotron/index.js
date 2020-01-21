@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Jumbotron() {
+const Jumbotron = () => {
     return (
         <div>
             <div className="jumbotron jumbotron-fluid bg-danger">

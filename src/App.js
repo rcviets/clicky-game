@@ -1,21 +1,44 @@
 import React from 'react';
 import Header from './components/Header';
 import Jumbotron from './components/Jumbotron';
-import Officers from './tng.json';
+import Wrapper from './components/Wrapper';
+import Cards from './components/Cards';
+import officers from './tng.json';
 import './App.css';
 
 class App extends React.Component {
   state = {
     topScore: 0,
     score: 0,
-    body: Officers
+    officers
   }
 
+  // officer ID for looping through array of officers
+  handleClick = officerID => {
+    console.log(officerID)
+
+  }
+  
+  
   render() {
+    const {score, topScore} = this.state;
+    let officerCards = this.state.officers.map((officer) =>
+      <Cards 
+        name = {officer.name}
+        image = {officer.image}
+        key = {officer.id}
+        id = {officer.id}
+        handleClick = {this.handleClick}
+      />  
+    )
     return (
       <div>
-        <Header score={this.state.score} topScore={this.state.topScore} />
+         {/* score = {score} topScore = {topScore} */}
+        <Header {...{score, topScore}} />
         <Jumbotron />
+        <Wrapper>
+          {officerCards}
+        </Wrapper>
       </div>
     );
   }
