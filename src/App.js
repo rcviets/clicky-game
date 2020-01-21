@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
 import Jumbotron from './components/Jumbotron';
-import Score from './components/Score';
 import Officers from './tng.json';
 import './App.css';
 
@@ -12,13 +11,11 @@ class App extends React.Component {
     body: Officers
   }
 
-
   render() {
     return (
       <div>
         <Header score={this.state.score} topScore={this.state.topScore} />
         <Jumbotron />
-        <Score />
       </div>
     );
   }

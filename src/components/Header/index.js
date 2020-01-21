@@ -1,15 +1,15 @@
 import React from 'react';
-import Score from '';
 
-const Header = (props) => {
+//Using an arrow function here kept causing a compiling error for some reason
+function Header(props) {
     return (
         <div>
-            <nav class="navbar navbar-light bg-warning">
-                <a class="navbar-brand" href="#">Clicky Game</a>
+            <nav className="navbar navbar-light bg-warning">
+                <a className="navbar-brand" href="https://rcviets.github.io/clicky-game/">The Next Generation Clicky Game</a>
+                <span className="navbar-text">
+                    <p>Score: {props.score} || Top Score: {props.topScore}</p>
+                </span>
             </nav>
-            <span class="navbar-text">
-                <p>Score: {props.score} || Top Score: {props.topScore}</p>
-            </span>
         </div>
     );
 }
