@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Jumbotron from './components/Jumbotron';
 import Wrapper from './components/Wrapper';
 import Cards from './components/Cards';
-import officers from './tng.json';
+import officers from './tng.js';
 import './App.css';
 
 class App extends React.Component {
@@ -22,14 +22,18 @@ class App extends React.Component {
   
   render() {
     const {score, topScore} = this.state;
-    let officerCards = this.state.officers.map((officer) =>
-      <Cards 
-        name = {officer.name}
-        image = {officer.image}
-        key = {officer.id}
-        id = {officer.id}
-        handleClick = {this.handleClick}
-      />  
+    let officerCards = this.state.officers.map((officer) =>{
+      console.log(officer.image);
+      return (
+        <Cards 
+          name = {officer.name}
+          image = {officer.image}
+          key = {officer.id}
+          id = {officer.id}
+          handleClick = {this.handleClick}
+        />  
+      )
+    }
     )
     return (
       <div>
@@ -45,26 +49,3 @@ class App extends React.Component {
 }
 
 export default App;
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-
