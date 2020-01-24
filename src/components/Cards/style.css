@@ -1,0 +1,15 @@
+.card {
+    background-color: #dc3545;
+    position: relative;
+    border-radius: 2px;
+    height: 250px;
+    width: 250px;
+    margin: 16px;
+    text-align: center;
+}
+
+.card > .img-container {
+    height: 100%;
+    padding: 3px 3px;
+    text-align: center;
+}

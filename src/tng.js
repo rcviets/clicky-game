@@ -73,12 +73,6 @@ let officers =
         "name": "Lore",
         "image": "../images/lore.jpg",
         "clicked": false
-    },
-    {
-        "id": 13,
-        "name": "Miles O'Brien",
-        "image": "../images/obrien.jpg",
-        "clicked": false
     }
 ]
 
