@@ -4,6 +4,7 @@ import Jumbotron from './components/Jumbotron';
 import Wrapper from './components/Wrapper';
 import Cards from './components/Cards';
 import officers from './tng.js';
+import update from "immutability-helper";
 import './App.css';
 
 class App extends React.Component {
@@ -17,6 +18,20 @@ class App extends React.Component {
   handleClick = officerID => {
     console.log(officerID)
 
+    let officerArr = this.state.officers;
+
+    //check if officer has been clicked
+    for (let i = 0; i < officerArr.length; i++) {
+      if (officerID === officerArr[i].id) {
+        //increase score if unclicked
+        if(officerArr[i].clicked === false) {
+          this.setState({
+            score: this.state.score + 1,
+            officers: update(this.state.officers, {[i]: {clicked: {$set: true}}}),
+          })
+        }
+      }
+    }
   }
   
   
