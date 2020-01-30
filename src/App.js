@@ -11,6 +11,7 @@ class App extends React.Component {
   state = {
     topScore: 0,
     score: 0,
+    headerText: "Don't Click A Picture Twice! ENGAGE!",
     officers
   }
 
@@ -28,7 +29,23 @@ class App extends React.Component {
           this.setState({
             score: this.state.score + 1,
             officers: update(this.state.officers, {[i]: {clicked: {$set: true}}}),
+            headerText: 'Make It So!'
           })
+        } else {
+          if (this.state.score > this.state.topScore) {
+            this.setState({
+              topScore: this.state.score,
+              score: 0,
+              headerText: 'The Line Must Be Drawn Here!',
+              officers
+            })
+          }
+          if (this.state.score <= this.state.topScore) {
+            this.setState({
+              score: 0,
+              officers
+            })
+          }
         }
       }
     }
@@ -36,7 +53,7 @@ class App extends React.Component {
   
   
   render() {
-    const {score, topScore} = this.state;
+    const {score, topScore, headerText} = this.state;
     let officerCards = this.state.officers.map((officer) =>{
       console.log(officer.image);
       return (
@@ -54,7 +71,7 @@ class App extends React.Component {
       <div>
          {/* score = {score} topScore = {topScore} */}
         <Header {...{score, topScore}} />
-        <Jumbotron />
+        <Jumbotron {...{headerText}} />
         <Wrapper>
           {officerCards}
         </Wrapper>
