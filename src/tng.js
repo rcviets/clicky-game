@@ -5,7 +5,7 @@ let officers =
     {
         "id": 1,
         "name": "Jean-Luc Picard",
-        "image": "../images/picard.jpg",
+        "image": "https://i1187.photobucket.com/albums/z384/randamus/picard.jpg",
         "clicked": false
     },
     {
