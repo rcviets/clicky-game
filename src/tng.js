@@ -17,61 +17,61 @@ let officers =
     {
         "id": 3,
         "name": "Commander Data",
-        "image": "../images/data.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/lore.jpg.html",
         "clicked": false
     },
     {
         "id": 4,
         "name": "Deanna Troi",
-        "image": "../images/troi.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/troi.jpg.html",
         "clicked": false
     },
     {
         "id": 5,
         "name": "Worf",
-        "image": "../images/worf.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/troi.jpg.html",
         "clicked": false
     },
     {
         "id": 6,
         "name": "Geordi La Forge",
-        "image": "../images/geordi.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/geordi.jpg.html",
         "clicked": false
     },
     {
         "id": 7,
         "name": "Dr. Beverly Crusher",
-        "image": "../images/crusher.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/crusher.jpg.html",
         "clicked": false
     },
     {
         "id": 8,
         "name": "Tasha Yar",
-        "image": "../images/tasha.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/tasha.jpg.html",
         "clicked": false
     },
     {
         "id": 9,
         "name": "Wesley Crusher",
-        "image": "../images/wesley.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/tasha.jpg.html",
         "clicked": false
     },
     {
         "id": 10,
         "name": "Guinan",
-        "image": "../images/guinan.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/guinan.jpg.html",
         "clicked": false
     },
     {
         "id": 11,
         "name": "Q",
-        "image": "../images/theQ.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/theQ.jpg.html",
         "clicked": false
     },
     {
         "id": 12,
         "name": "Lore",
-        "image": "../images/lore.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/lore.jpg.html",
         "clicked": false
     }
 ]
