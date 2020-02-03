@@ -11,7 +11,7 @@ let officers =
     {
         "id": 2,
         "name": "William Riker",
-        "image": "https://i1187.photobucket.com/albums/z384/randamus/riker.jpg",
+        "image": "https://s1187.photobucket.com/user/randamus/media/riker.jpg.html",
         "clicked": false
     },
     {
